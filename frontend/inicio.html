@@ -1,0 +1,48 @@
+<?php 
+	session_start();
+	$session=$_SESSION['usuario'];
+	if ($session==null||$session=='') {
+		echo "no puedes acceder a esta pagina";
+		die();
+	}
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../css/Estilos_inicio.css">
+	<link rel="stylesheet" type="text/css" href="../css/carga.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="content_loader">
+		<div class="loader"></div>
+	</div>
+	<div class="ven"> 
+		<label><a href="../Backend/cerrar_session.php">cerra session</a></label>
+	</div>
+	<header class="header">
+		<div class="contenedor logo-contenedor">
+			<a href="#" class="logo"><img src="../img/logo.png"></a>
+			<a href="" class="logo_usuario"><p class="users"><?php echo $_SESSION['usuario']; ?></p><img src="../img/usuario_logo.png"></a>
+		</div>
+	</header>
+	<main class="main">
+		<div class="contenedor2">
+			<h1>Procal</h1>
+			<div><a href="#"><img src="../img/img5.png"><p>Almacen</p></a></div>
+			<div><a href="#"><img src="../img/img6.png"><p>Lab. Quimica</p></a></div>
+			<div><a href="#"><img src="../img/img8.png"><p>Frutas y Hortalizas</p></a></div>
+			<div><a href="#"><img src="../img/img4.png"><p>Mantenimiento</p></a></div>
+			<div><a href="#"><img src="../img/img9.png"><p>Material prestado</p></a></div>
+			<div><a href="#"><img src="../img/img7.png"><p>Solicitud de prestamo</p></a></div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="contenedor">
+			
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/carga.js"></script>
+</body>
+</html>

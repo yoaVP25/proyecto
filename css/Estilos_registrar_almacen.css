@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #BAE8DF;
+}
+.logo img{
+  width: 100%;
+  max-width: 110px;
+}
+.contenedor{
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+.ti{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+.header{
+  background: #079E8F;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+}
+.header a{
+  color: white;
+  text-decoration: none;
+}
+.logo-contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_usuario img{
+  width: 100%;
+  margin-top: 2px;
+  max-width: 70px;
+}
+.users{
+  color: black;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+.wrapper{
+  margin-top: 60px;
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #4158d0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+}
+
+
+
+.wrapper .title{
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background: #333;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .box{
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+.wrapper .box label{
+  display: flex;
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2{
+  background: #333;
+  border-color: #333;
+}
+.wrapper .box label .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot{
+  background: #fff;
+}
+.box label .dot::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before{
+  background: #333;
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper .box label .text{
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text{
+  color: #fff;
+}
+.wrapper .box input[type="radio"]{
+  display: none;
+}
+.boton{
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  height: 30px;
+  background: #BAE8DF;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 16px;
+  outline: none;
+  border: 3px solid #079E8F;
+  position: relative;
+  z-index: 1;
+
+}
+.boton:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.boton:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #079E8F;
+}
+.boton:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}

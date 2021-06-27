@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registrar</title>
+	<link rel="stylesheet" type="text/css" href="../css/Estilos_registrar.css">
+	<link rel="stylesheet" type="text/css" href="../css/carga.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="content_loader">
+		<div class="loader"></div>
+	</div>
+	<div class="fon">
+		<div id="form">
+			<h1>Registrar</h1>
+			<form action="../Backend/registrar_login.php" method="POST">
+				<label>Nombre</label><br>
+				<input id="Nombre" type="text" name="nombre" required placeholder="Ingrese su nombre"><br>
+				<label>Apellidos</label><br>
+				<input id="Apellidos" type="text" name="apellido" required placeholder="Ingrese su apellido"><br>
+				<label>Correo</label><br>
+				<input id="Usuario" type="text" name="usuario" required placeholder="Ingrese su usuario"><br>
+				<label>Matricula</label><br>
+				<input id="matricula" type="number" name="matricula" required placeholder="Ingrese su matricula"><br>
+				<label>Contraseña</label><br>
+				<input  id="texto" type="password" name="password" required placeholder="Ingrese su contraseña"><br>
+				<select id="rol" required name="rol">
+					<option hidden selected>Seleccione una opción</option>
+					<option value="2">Alumno</option>
+					<option value="1">Maestro</option>
+				</select>
+				<input id="in" type="submit" name="Registrar" value="Registrar">
+				<a href="../index.html"><input id="regresar" type="button" name="regresar" value="Regresar"></a>
+			</form><br>
+		</div>	
+	</div>
+	<script type="text/javascript" src="../js/carga.js"></script>
+</body>
+</html>

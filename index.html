@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inicio de sesion</title>
+	<link rel="stylesheet" type="text/css" href="css/Estilos_Login.css">
+	<link rel="stylesheet" type="text/css" href="css/carga.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="content_loader">
+		<div class="loader"></div>
+	</div>
+	<div class="fon">
+		<div id="form">
+			<h1>Iniciar sesion</h1>
+			<form action="Backend/login.php" method="POST">
+				<label>Correo</label><br>
+				<input id="texto" type="text" name="usuario" required placeholder="Ingrese su usuario"><br>
+				<label>Contraseña</label><br>
+				<input  id="texto" type="password" name="password" required placeholder="Ingrese su contraseña"><br>
+				<input id="in" type="submit" name="Ingresar" value="Ingresar">
+			</form><br>
+			<a href="frontend/registrar.html">Regitrar un nuevo usuario</a>
+			<br>
+			<a href="frontend/Olvidar_password.html">Olvidé mi contraseña</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/carga.js"></script>
+</body>
+</html>

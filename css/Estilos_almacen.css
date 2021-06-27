@@ -1,0 +1,142 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background: url(../img/fondo1.jpg) no-repeat center top;
+	background-size: cover;*/
+	background: #BAE8DF;
+
+}
+.logo img{
+	width: 100%;
+	max-width: 110px;
+}
+.contenedor{
+	width: 85%;
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.ti{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+}
+.header{
+	background: #079E8F ;
+	color: #fff;
+
+}
+.header a{
+	color: white;
+	text-decoration: none;
+}
+.logo-contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo_usuario img{
+	width: 100%;
+	margin-top: 2px;
+	max-width: 70px;
+}
+.users{
+	color: black;
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	margin-right: 10px;
+	margin-top: 25px;
+}
+.contenedor2{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.table{
+	margin-top: 60px;
+}
+.titulos{
+	display: inline-grid;
+	float: left;
+	width: 150px;
+	height: 50px;
+	align-items: center;
+	text-align: center;
+	background: #474747;
+	color: #D5D5D5;
+}
+.t{
+	width: 120px;
+}
+.n{
+	width: 95px;
+}
+.l{
+	width: 270px;
+}
+.agre{
+	width: 190px;
+}
+.contenido{
+	display: inline-grid;
+	float: left;
+	width: 130px;
+	height: 85px;
+	align-items: center;
+	text-align: center;
+	background: #36BBA2;
+
+}
+.tc{
+	width: 120px;
+}
+.nc{
+	width: 95px;
+}
+.lc{
+	width: 270px;
+}
+.modificadores{
+	width: 95px;
+	}
+.agregar{
+	background-color: #38BEC5;
+	padding: 5px;
+	width: 80%;
+	border: 3px solid #454545;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.agregar:hover{
+	background-color: #2D7E83;
+	color: white;
+}
+.eliminar{
+    background-color: #FB4E46;
+    padding: 5px;
+    width: 80%;
+    border: 3px solid #454545 ;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.eliminar:hover{
+	background-color: #A70300 ;
+	color: white;
+}
+.modi{
+	background-color: #F6FF2C  ;
+	padding: 5px;
+	width: 80%;
+	border: 3px solid #454545 ;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.modi:hover{
+	background-color: #959900 ;
+	color: white;
+}
